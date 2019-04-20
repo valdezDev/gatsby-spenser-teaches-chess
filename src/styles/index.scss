@@ -1,0 +1,159 @@
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+@import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700|Raleway:200,400,700,900');
+
+@import './base';
+@import './vars';
+
+// Index & Success Page
+.hero-background-0 {
+  background: url(../images/hero-background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  opacity: 0.12;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  z-index: -1;
+}
+
+.hero-background-1 {
+  background-image: linear-gradient(to bottom, darken($tourney, 32%), lighten($tourney, 3%));
+  background-size: cover;
+  opacity: 0.4;
+  height: 100%;
+  margin-top: 0px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  z-index: -1;
+}
+
+// Applies to most pages
+.page-header {
+  color: $light;
+}
+
+.index-intro {
+  background: rgba($tourney, 0.001);
+  margin-top: 2.5rem;
+  border-width: 0;
+  &__page-header {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: $light;
+    font-size: 4.5rem;
+  }
+
+  &__profession {
+    color: $light;
+    font-size: 1.25rem;
+  }
+
+  &__button {
+    background-image: linear-gradient(to right, darken($tourney, 15%), darken($tourney, 5%));
+    display: block;
+    border-radius: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 4px 8px darken($tourney, 50%);
+    transition: all .2s ease-in-out;
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  &__link {
+    color: darken(white, 12%);
+    transition: color 0.5s ease;
+    &:hover {
+      color: white;
+      font-weight: bold;
+    }
+  }
+}
+.contact-comp {
+  margin-top: 10rem;
+  z-index: -1;
+}
+
+// Contact Form
+.contact-card {
+  margin-top: 4rem;
+  background: rgba($tourney, 0.001);
+  border-width: 0;
+  &__title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: darken($tourney, 1%);
+  }
+
+  &__subtitle {
+    color: lighten($tourney, 20%);
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  &__success-subtitle {
+    color: lighten($tourney, 20%);
+    font-size: 1.25rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+  }
+  &__body {
+    margin: auto;
+  }
+
+  &__name {
+    display: block;
+    margin: 0 auto;
+    background-color: darken(white, 4%);
+  }
+  
+  &__email {
+    display: block;
+    margin: 1.25rem auto;
+    background-color: darken(white, 4%);
+  }
+
+  &__message {
+    justify-content: center;
+    display: block;
+    margin: 2rem auto;
+  }
+
+  &__send-message {
+    justify-content: center;
+    display: block;
+    margin: 1rem auto;
+    border-color: $tourney !important;
+  }
+
+  & textarea {
+    background-color: darken(white, 4%);
+  }
+}
+
+.follow-card {
+  background-image: linear-gradient(to bottom, lighten($tourney, 3%), lighten($tourney, 6.2%));
+
+  &__title {
+    font-weight: bold;
+    font-size: 2rem;
+    color: darken($tourney, 4%);
+  }
+}
+
+.email-gif {
+  width: 50%;
+  display: block;
+  margin:auto;
+}

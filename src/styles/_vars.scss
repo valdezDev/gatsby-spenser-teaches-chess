@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Merienda');
+
+$Lato: 'Lato', sans-serif;
+$Roboto: 'Roboto', sans-serif;
+$Merienda: 'Merienda', cursive;
+
+$light: #F0E8DD;
+$tourney: #32674B;
+$brown: #4E2B25;
+
+
+$break-small: 320px;
+$break-large: 1024px;
+@mixin respond-to($media) {
+  @if $media == handhelds {
+    @media only screen and (max-width: $break-small) { @content; }
+  }
+  @else if $media == medium-screens {
+    @media only screen and (min-width: $break-small + 1) and (max-width: $break-large - 1) { @content; }
+  }
+  @else if $media == wide-screens {
+    @media only screen and (min-width: $break-large) { @content; }
+  }
+}

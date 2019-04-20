@@ -1,0 +1,46 @@
+.container#content {
+  margin-top: 60px;
+}
+body {
+  /*background: linear-gradient(
+    to bottom, 
+    rgba(darken($blue, 32%), 0.9), 
+    rgba(lighten($dark-gray, 0.5%), 0.999)
+  );*/
+  background-color: $light;
+}
+a {
+  color: #0056b3;
+  &:hover {
+    color: #007bff;
+    text-decoration: none;
+  }
+}
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.navbar {
+  background: rgba(darken($light, 39%), 0.75);
+  line-height: 1;
+  color: $white;
+}
+.navbar-dark .navbar-nav .nav-link,
+.navbar-dark .navbar-brand {
+  color: $light;
+  transition: color 0.5s ease-in-out, all 0.2s ease-in-out;
+  
+  &:hover {
+    color: lighten($light, 30%);
+    transform: scale(1.2);
+  }
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
