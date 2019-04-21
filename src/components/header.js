@@ -1,6 +1,7 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import icon from '../images/rook.png';
 
 import {
   Collapse,
@@ -31,7 +32,7 @@ class Header extends React.Component{
       <div>
         <Navbar fixed="top" dark expand="sm">
           <div className="container">
-          <NavbarBrand href="/">{this.props.siteTitle}</NavbarBrand>
+          <NavbarBrand href="/"><img className="rook" src={icon} />{this.props.siteTitle}</NavbarBrand>
           <NavbarToggler className="nav-toggler" onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>

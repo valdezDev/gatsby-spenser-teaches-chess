@@ -2,11 +2,6 @@
   margin-top: 60px;
 }
 body {
-  /*background: linear-gradient(
-    to bottom, 
-    rgba(darken($blue, 32%), 0.9), 
-    rgba(lighten($dark-gray, 0.5%), 0.999)
-  );*/
   background-color: $light;
 }
 a {
@@ -21,22 +16,30 @@ body {
 }
 
 h1 {
-  margin-bottom: 20px;
+  //margin-bottom: 20px;
   text-align: center;
 }
+.rook {
+  width: 18px;
+  height: 18px;
+  margin-right: 6px;
+  margin-bottom: 4px;
+}
 .navbar {
-  background: rgba(darken($light, 39%), 0.75);
+  //font-size: 8px;
+  background: rgba(darken($teal, 39%), 0.75);
   line-height: 1;
-  color: $white;
+  color: white;
 }
 .navbar-dark .navbar-nav .nav-link,
 .navbar-dark .navbar-brand {
+  font-size: 1rem;;
   color: $light;
   transition: color 0.5s ease-in-out, all 0.2s ease-in-out;
   
   &:hover {
     color: lighten($light, 30%);
-    transform: scale(1.2);
+    transform: scale(1.06);
   }
 }
 

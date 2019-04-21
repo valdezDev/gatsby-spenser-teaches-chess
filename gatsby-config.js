@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Spenser Teaches Chess`,
+    title: `Spenser Kearns`,
     description: `Spenser provides quality private chess lessons to students that are willing to learn.`,
     author: `Paul Valdez`,
   },
