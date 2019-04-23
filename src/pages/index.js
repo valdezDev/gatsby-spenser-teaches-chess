@@ -1,9 +1,8 @@
 import React from "react";
-//import { Link } from "gatsby";
 import { Link, animateScroll as scroll } from "react-scroll";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import { Button, Card, CardBody, CardImg, CardSubtitle, CardText, CardTitle, Col, Container, Row } from "reactstrap";
+import { Button, Card, CardBody, CardImg, CardSubtitle, CardText, CardTitle, Col, Container } from "reactstrap";
 import SpenserImage from '../images/profilePic.jpg';
 import '../styles/index.scss';
 
@@ -25,7 +24,7 @@ const IndexPage = () => (
           <Button className="col-md-2 index-intro__button">
             <Link
               activeClass="active"
-              to="contact-card"
+              to="card-3"
               spy={true}
               smooth={true}
               offset={-70}
@@ -37,8 +36,8 @@ const IndexPage = () => (
       </Col>
     </Card>
     
-    <Card className="card-2 about-me">
-      <CardImg top width="75%" src={SpenserImage} alt="Card image cap" className="about-img rounded-circle"/>
+    <Card className="card-2 about-me row-cover-full">
+      <CardImg top width="100%" src={SpenserImage} alt="Card image cap" className="about-img rounded-circle d-block"/>
       <CardTitle className="about-me__title text-center">Who is Spenser Kearns?</CardTitle>
         <CardBody className="about-me__body">
           <CardText className="about-me__text">
@@ -56,12 +55,10 @@ const IndexPage = () => (
         </CardBody>
     </Card>
     
-    <Card className="row-3">
-      <Col sm="12 contact-col">
-        <Card className="contact-card">
+    <Card className="card-3">
           <CardTitle className="contact-card__title text-center">Get in Touch!</CardTitle>
           <CardSubtitle className="contact-card__subtitle text-center">
-            All messages will be sent to my personal email at pvaldezdev@gmail.com.
+            All messages will be sent to my personal email at kearnsSP@vcu.edu@gmail.com.
           </CardSubtitle>
           <CardBody className="contact-card__body col-md-12">
             <form method="POST" action="/success" className="contact-card__form" data-netlify="true" data-netlify-honeypot="bot-field" name="contact">
@@ -74,7 +71,7 @@ const IndexPage = () => (
                   <input className="contact-card__email" type="email" name="email" id="email" placeholder="example@email.com" />
                 </div>
                 <div className="contact-card__field">
-                  <textarea className="contact-card__message" name="message" id="message" rows="8" placeholder="Start typing..." ></textarea>
+                  <textarea className="contact-card__message col-md-7" name="message" id="message" rows="8" placeholder="Start typing..." ></textarea>
                 </div>
                 <div className="contact-card__field">
                   <div data-netlify-recaptcha="true"></div>
@@ -85,8 +82,6 @@ const IndexPage = () => (
               </ul>
             </form>
           </CardBody>
-        </Card>
-      </Col>
     </Card>
   </Layout>
 )

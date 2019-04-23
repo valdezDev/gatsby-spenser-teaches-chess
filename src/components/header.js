@@ -59,7 +59,7 @@ class Header extends React.Component{
               </Link>
               <Link
                 activeClass="active"
-                to="contact-card"
+                to="card-3"
                 spy={true}
                 smooth={true}
                 offset={-70}
