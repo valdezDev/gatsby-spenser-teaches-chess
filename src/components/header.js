@@ -1,4 +1,4 @@
-import { Link } from "gatsby"
+import { Link, animateScroll as scroll } from "react-scroll";
 import PropTypes from "prop-types"
 import React from "react"
 import icon from '../images/rook.png';
@@ -32,16 +32,42 @@ class Header extends React.Component{
       <div>
         <Navbar fixed="top" dark expand="sm">
           <div className="container">
-          <NavbarBrand href="/"><img className="rook" src={icon} />{this.props.siteTitle}</NavbarBrand>
+          <Link
+            activeClass="active"
+            to="row-1"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={1000}>
+            <NavbarBrand href="/">
+              <img className="rook" src={icon} />{this.props.siteTitle}
+            </NavbarBrand>
+          </Link>
           <NavbarToggler className="nav-toggler" onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
-              <NavItem>
-                <NavLink href="/about">About</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="/contact">Contact</NavLink>
-              </NavItem>
+              <Link
+                activeClass="active"
+                to="about-me__title"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={1000}>
+                  <NavItem>
+                    <NavLink href="/about">About</NavLink>
+                  </NavItem>
+              </Link>
+              <Link
+                activeClass="active"
+                to="contact-card"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={1000}>
+                  <NavItem>
+                    <NavLink href="/contact">Contact</NavLink>
+                  </NavItem>
+              </Link>
             </Nav>
           </Collapse>
           </div>
