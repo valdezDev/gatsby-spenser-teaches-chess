@@ -41,16 +41,16 @@ const SuccessPage = () => (
       <CardImg top width="100%" src={SpenserImage} alt="Card image cap" className="about-img rounded-circle d-block"/>
       <CardTitle className="about-me__title text-center">Who is Spenser Kearns?</CardTitle>
         <CardBody className="about-me__body">
-          <CardText className="about-me__text col-md-8 mx-auto">
+          <CardText className="about-me__text col-md-9 mx-auto">
           &nbsp; &nbsp; &nbsp; &nbsp;Spenser Kearns is a Richmond-based private chess instructor who learned to play chess at six years old and consistently placed near the top of every scholastic chess tournament in Virginia by age 11. He has worked for Maurice Ashley, the world's first black chess Grandmaster, since 2013, and is currently employed by Championship Chess. Spenser has taught students of various ages at several schools throughout Richmond, including Harvie Elementary, Trevvett Elementary, St. Bridget School, Hunter Classical Christian School, and Collegiate School. Spenser is also an active member of the Virginia Commonwealth University chess club. During his freshman year at VCU, he worked as a chess coach for the VCU psychology department's Mind MATCH program, a study done to determine the impact of chess skills on a children’s executive decision-making processes. Read more about the study and its resultshere.
           </CardText>
-          <CardText className="about-me__text col-md-8 mx-auto">
+          <CardText className="about-me__text col-md-9 mx-auto">
           &nbsp; &nbsp; &nbsp; &nbsp;Along with chess, Spenser has exhibited great aptitude at music; he was the recipient of the John Philip Sousa Award, the highest honor of his high school band program, and went on to study saxophone performance under Al Regni, former New York Philharmonic saxophonist, at VCU's School of the Arts. Spenser performed in the VCU Symphonic Wind Ensemble as well as the top jazz orchestra in his program. During his time at VCU, he also studied percussion under William Messerschmidt, former principal percussionist for the U.S. Army Band, “Pershing’s Own.” In June 2018, Spenser also represented Virginia in the Settlers of Catan National Championship after winning a qualifying tournament in Williamsburg.
           </CardText>
-          <CardText className="about-me__text col-md-8 mx-auto">
+          <CardText className="about-me__text col-md-9 mx-auto">
           &nbsp; &nbsp; &nbsp; &nbsp;"Chess presents a great opportunity for any student to challenge themselves and learn what it takes to succeed. The lessons taught through chess are invaluable, showing positive effects towards improving memory, decision making, discipline, time management, sportsmanship, and mindfulness."
           </CardText>
-          <CardText className="about-me__text col-md-8 mx-auto">
+          <CardText className="about-me__text col-md-9 mx-auto">
           &nbsp; &nbsp; &nbsp; &nbsp;"I have experience working with students of all ages and am prepared to design a curriculum suited to each individual's strengths and goals. I offer fair and flexible rates for private lessons at your own home, a coffee shop, bar, or public park."
           </CardText>
         </CardBody>

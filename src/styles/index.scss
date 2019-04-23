@@ -72,10 +72,6 @@
   //margin-top: 30rem;
 }
 
-.page-header {
-  color: $light;
-}
-
 .index-intro {
   background: rgba($teal, 0.001);
   margin-top: 150px;
@@ -86,7 +82,7 @@
   &__page-header {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: $light;
-    font-size: 4rem;
+    font-size: 3.75rem;
     justify-content: center;
   }
 
@@ -251,4 +247,7 @@
   width: 25%;
   display: block;
   margin:auto;
+  border-radius: 10px;
+  border-width: 10px;
+  box-shadow: 2px 2px darken($teal, 25%);
 }
