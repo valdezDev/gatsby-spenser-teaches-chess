@@ -20,7 +20,7 @@ const IndexPage = () => (
         <Card className="index-intro">
           <CardTitle className="index-intro__page-header text-center">Spenser Kearns</CardTitle>
           <CardSubtitle className="index-intro__profession text-center">Chess Tutor</CardSubtitle>
-          <CardSubtitle className="index-intro__motto text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi magnam consequuntur nesciunt!</CardSubtitle>
+          <CardSubtitle className="index-intro__motto text-center"></CardSubtitle>
           <Button className="col-md-2 index-intro__button">
             <Link
               activeClass="active"
